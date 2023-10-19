@@ -51,7 +51,7 @@
 - `ping.txt`: `ping 192.168.110.6` の実行結果
 - `pingRTT.txt`: `ping 192.168.110.6 -c 15` の実行結果
 - `traceroute.txt`: `traceroute 192.168.110.6` の実行結果
-</br>
+
 - `tc/`: それ以下のファイル・フォルダはtcコマンド関連
   - `bps/` は次の帯域制御下で行った;
   `sudo tc qdisc add dev eth0 root handle 10:0 tbf rate 50mbit burst 200kb limit 2000kb`
@@ -67,13 +67,13 @@
       - `delay/`: `iperf3 -c 192.168.110.6 -p 5209 -u -b 100M  --get-server-output` の実行結果 (port番号は必ずしも一致しない)
     - `twoHundred/`
       - `bps/`: `iperf3 -c 192.168.110.6 -p 5201 -u -b 200M  --get-server-output` の実行結果 (port番号は必ずしも一致しない)
-</br>
+
 - `tcp/`: `iperf3 -c 192.168.110.6 -p 5205 --get-server-output` の実行結果 (port番号は必ずしも一致しない)
-</br>
+
 - `udp/`
   - `hundred/`: `iperf3 -c 192.168.110.6 -p 5204 -u -b 100M  --get-server-output` の実行結果 (port番号は必ずしも一致しない)
   - `twoHundred/`: `iperf3 -c 192.168.110.6 -p 5210 -u -b 200M  --get-server-output` の実行結果 (port番号は必ずしも一致しない)
-</br>
+
 - `upperDown/`: iperf3の-Rオプション
   - `tcp/`: `iperf3 -c 192.168.110.6 -p 5209 -R --get-server-output` の実行結果 (port番号は必ずしも一致しない)
   - `udp/`
