@@ -1,0 +1,10 @@
+Connecting to host 192.168.0.54, port 5207
+Reverse mode, remote host 192.168.0.54 is sending
+[  5] local 192.168.0.149 port 42170 connected to 192.168.0.54 port 5207
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  1.88 MBytes  15.8 Mbits/sec                  
+[  5]   1.00-1.28   sec   776 KBytes  22.9 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.28   sec  0.00 Bytes  0.00 bits/sec                  sender
+[  5]   0.00-1.28   sec  2.64 MBytes  17.3 Mbits/sec                  receiver

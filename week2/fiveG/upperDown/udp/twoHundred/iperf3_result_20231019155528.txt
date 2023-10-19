@@ -1,0 +1,46 @@
+Connecting to host 192.168.110.6, port 5202
+Reverse mode, remote host 192.168.110.6 is sending
+[  5] local 192.168.1.102 port 34570 connected to 192.168.110.6 port 5202
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  1.78 MBytes  14.9 Mbits/sec  0.104 ms  11920/13208 (90%)  
+[  5]   1.00-2.00   sec   404 KBytes  3.31 Mbits/sec  0.209 ms  16835/17121 (98%)  
+[  5]   2.00-3.00   sec   778 KBytes  6.37 Mbits/sec  0.185 ms  18738/19288 (97%)  
+[  5]   3.00-4.00   sec  1.14 MBytes  9.58 Mbits/sec  0.163 ms  16294/17121 (95%)  
+[  5]   4.00-5.00   sec  1.15 MBytes  9.64 Mbits/sec  0.089 ms  15453/16285 (95%)  
+[  5]   5.00-6.00   sec  1.32 MBytes  11.1 Mbits/sec  0.126 ms  16543/17502 (95%)  
+[  5]   6.00-7.00   sec  2.85 MBytes  23.9 Mbits/sec  0.075 ms  16228/18295 (89%)  
+[  5]   7.00-8.00   sec  1.26 MBytes  10.5 Mbits/sec  0.106 ms  16110/17019 (95%)  
+[  5]   8.00-9.00   sec  1.04 MBytes  8.71 Mbits/sec  0.097 ms  16737/17489 (96%)  
+[  5]   9.00-10.00  sec  1.10 MBytes  9.22 Mbits/sec  0.056 ms  15942/16738 (95%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-13.13  sec   313 MBytes   200 Mbits/sec  0.000 ms  0/226749 (0%)  sender
+[  5]   0.00-10.00  sec  12.8 MBytes  10.7 Mbits/sec  0.056 ms  160800/170066 (95%)  receiver
+
+Server output:
+-----------------------------------------------------------
+Server listening on 5202
+-----------------------------------------------------------
+Accepted connection from 192.168.110.75, port 53930
+[  8] local 192.168.110.6 port 5202 connected to 192.168.110.75 port 34570
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  8]   0.00-1.00   sec  23.8 MBytes   200 Mbits/sec  17255  
+[  8]   1.00-2.00   sec  23.8 MBytes   200 Mbits/sec  17263  
+[  8]   2.00-3.00   sec  23.8 MBytes   200 Mbits/sec  17265  
+[  8]   3.00-4.00   sec  23.8 MBytes   200 Mbits/sec  17266  
+[  8]   4.00-5.00   sec  23.8 MBytes   200 Mbits/sec  17264  
+[  8]   5.00-6.00   sec  23.8 MBytes   200 Mbits/sec  17265  
+[  8]   6.00-7.00   sec  23.8 MBytes   200 Mbits/sec  17264  
+[  8]   7.00-8.00   sec  23.8 MBytes   200 Mbits/sec  17266  
+[  8]   8.00-9.00   sec  23.8 MBytes   200 Mbits/sec  17264  
+[  8]   9.00-10.00  sec  23.8 MBytes   200 Mbits/sec  17266  
+[  8]  10.00-11.00  sec  23.8 MBytes   200 Mbits/sec  17271  
+[  8]  11.00-12.00  sec  23.8 MBytes   200 Mbits/sec  17262  
+[  8]  12.00-13.00  sec  23.8 MBytes   200 Mbits/sec  17261  
+[  8]  13.00-13.13  sec  3.20 MBytes   200 Mbits/sec  2317  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  8]   0.00-13.13  sec   313 MBytes   200 Mbits/sec  0.000 ms  0/226749 (0%)  sender
+
+
+iperf Done.

@@ -1,0 +1,23 @@
+PING 192.168.110.6 (192.168.110.6) 56(84) bytes of data.
+
+--- 192.168.110.6 ping statistics ---
+5 packets transmitted, 0 received, 100% packet loss, time 4093ms
+
+PING 192.168.110.6 (192.168.110.6) 56(84) bytes of data.
+64 bytes from 192.168.110.6: icmp_seq=1 ttl=62 time=384 ms
+64 bytes from 192.168.110.6: icmp_seq=2 ttl=62 time=218 ms
+64 bytes from 192.168.110.6: icmp_seq=3 ttl=62 time=179 ms
+64 bytes from 192.168.110.6: icmp_seq=4 ttl=62 time=233 ms
+64 bytes from 192.168.110.6: icmp_seq=5 ttl=62 time=15.3 ms
+64 bytes from 192.168.110.6: icmp_seq=6 ttl=62 time=349 ms
+64 bytes from 192.168.110.6: icmp_seq=8 ttl=62 time=152 ms
+64 bytes from 192.168.110.6: icmp_seq=9 ttl=62 time=251 ms
+64 bytes from 192.168.110.6: icmp_seq=10 ttl=62 time=380 ms
+64 bytes from 192.168.110.6: icmp_seq=11 ttl=62 time=255 ms
+64 bytes from 192.168.110.6: icmp_seq=12 ttl=62 time=200 ms
+64 bytes from 192.168.110.6: icmp_seq=13 ttl=62 time=291 ms
+64 bytes from 192.168.110.6: icmp_seq=14 ttl=62 time=501 ms
+
+--- 192.168.110.6 ping statistics ---
+15 packets transmitted, 13 received, 13.3333% packet loss, time 14027ms
+rtt min/avg/max/mdev = 15.296/262.246/501.214/118.115 ms

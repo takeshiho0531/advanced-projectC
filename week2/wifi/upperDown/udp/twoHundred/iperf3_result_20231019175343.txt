@@ -1,0 +1,43 @@
+Connecting to host 192.168.0.54, port 5208
+Reverse mode, remote host 192.168.0.54 is sending
+[  5] local 192.168.0.149 port 45043 connected to 192.168.0.54 port 5208
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  10.8 MBytes  90.9 Mbits/sec  0.555 ms  347/8194 (4.2%)  
+[  5]   1.00-2.00   sec  10.9 MBytes  91.7 Mbits/sec  0.222 ms  0/7918 (0%)  
+[  5]   2.00-3.00   sec  11.3 MBytes  94.8 Mbits/sec  0.212 ms  0/8184 (0%)  
+[  5]   3.00-4.00   sec  11.4 MBytes  95.6 Mbits/sec  0.211 ms  0/8251 (0%)  
+[  5]   4.00-5.00   sec  11.0 MBytes  92.1 Mbits/sec  0.108 ms  0/7949 (0%)  
+[  5]   5.00-6.00   sec  11.1 MBytes  93.2 Mbits/sec  0.229 ms  0/8046 (0%)  
+[  5]   6.00-7.00   sec  10.5 MBytes  88.0 Mbits/sec  0.119 ms  0/7599 (0%)  
+[  5]   7.00-8.00   sec  11.6 MBytes  97.0 Mbits/sec  0.485 ms  0/8378 (0%)  
+[  5]   8.00-9.00   sec  10.8 MBytes  90.4 Mbits/sec  0.239 ms  0/7803 (0%)  
+[  5]   9.00-10.00  sec  10.7 MBytes  90.1 Mbits/sec  0.147 ms  0/7775 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-10.06  sec   111 MBytes  92.4 Mbits/sec  0.000 ms  0/80247 (0%)  sender
+[  5]   0.00-10.00  sec   110 MBytes  92.4 Mbits/sec  0.147 ms  347/80097 (0.43%)  receiver
+
+Server output:
+-----------------------------------------------------------
+Server listening on 5208
+-----------------------------------------------------------
+Accepted connection from 192.168.0.149, port 39626
+[ 11] local 192.168.0.54 port 5208 connected to 192.168.0.149 port 45043
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[ 11]   0.00-1.00   sec  11.1 MBytes  93.2 Mbits/sec  8046  
+[ 11]   1.00-2.00   sec  10.7 MBytes  89.8 Mbits/sec  7755  
+[ 11]   2.00-3.00   sec  11.2 MBytes  94.0 Mbits/sec  8119  
+[ 11]   3.00-4.00   sec  11.3 MBytes  95.0 Mbits/sec  8197  
+[ 11]   4.00-5.00   sec  11.1 MBytes  93.5 Mbits/sec  8072  
+[ 11]   5.00-6.00   sec  11.1 MBytes  93.2 Mbits/sec  8045  
+[ 11]   6.00-7.00   sec  11.2 MBytes  93.7 Mbits/sec  8089  
+[ 11]   7.00-8.00   sec  11.4 MBytes  95.4 Mbits/sec  8236  
+[ 11]   8.00-9.00   sec  10.2 MBytes  85.9 Mbits/sec  7419  
+[ 11]   9.00-10.00  sec  10.8 MBytes  90.5 Mbits/sec  7814  
+[ 11]  10.00-10.06  sec   643 KBytes  83.3 Mbits/sec  455  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[ 11]   0.00-10.06  sec   111 MBytes  92.4 Mbits/sec  0.000 ms  0/80247 (0%)  sender
+
+
+iperf Done.

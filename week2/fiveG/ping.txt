@@ -1,0 +1,81 @@
+PING 192.168.110.6 (192.168.110.6) 56(84) bytes of data.
+
+--- 192.168.110.6 ping statistics ---
+26 packets transmitted, 0 received, 100% packet loss, time 25604ms
+
+PING 192.168.110.6 (192.168.110.6) 56(84) bytes of data.
+From 192.168.1.1 icmp_seq=1 Destination Net Unreachable
+From 192.168.1.1 icmp_seq=2 Destination Net Unreachable
+From 192.168.1.1 icmp_seq=3 Destination Net Unreachable
+From 192.168.1.1 icmp_seq=4 Destination Net Unreachable
+
+--- 192.168.110.6 ping statistics ---
+5 packets transmitted, 0 received, +4 errors, 100% packet loss, time 4055ms
+
+PING 192.168.110.6 (192.168.110.6) 56(84) bytes of data.
+64 bytes from 192.168.110.6: icmp_seq=1 ttl=62 time=183 ms
+64 bytes from 192.168.110.6: icmp_seq=3 ttl=62 time=267 ms
+64 bytes from 192.168.110.6: icmp_seq=4 ttl=62 time=236 ms
+64 bytes from 192.168.110.6: icmp_seq=5 ttl=62 time=84.0 ms
+64 bytes from 192.168.110.6: icmp_seq=6 ttl=62 time=186 ms
+64 bytes from 192.168.110.6: icmp_seq=7 ttl=62 time=310 ms
+64 bytes from 192.168.110.6: icmp_seq=8 ttl=62 time=260 ms
+64 bytes from 192.168.110.6: icmp_seq=9 ttl=62 time=270 ms
+64 bytes from 192.168.110.6: icmp_seq=10 ttl=62 time=236 ms
+64 bytes from 192.168.110.6: icmp_seq=11 ttl=62 time=255 ms
+64 bytes from 192.168.110.6: icmp_seq=12 ttl=62 time=372 ms
+64 bytes from 192.168.110.6: icmp_seq=13 ttl=62 time=350 ms
+64 bytes from 192.168.110.6: icmp_seq=14 ttl=62 time=316 ms
+64 bytes from 192.168.110.6: icmp_seq=15 ttl=62 time=245 ms
+64 bytes from 192.168.110.6: icmp_seq=17 ttl=62 time=161 ms
+64 bytes from 192.168.110.6: icmp_seq=19 ttl=62 time=229 ms
+64 bytes from 192.168.110.6: icmp_seq=20 ttl=62 time=309 ms
+64 bytes from 192.168.110.6: icmp_seq=21 ttl=62 time=164 ms
+64 bytes from 192.168.110.6: icmp_seq=23 ttl=62 time=200 ms
+64 bytes from 192.168.110.6: icmp_seq=24 ttl=62 time=374 ms
+64 bytes from 192.168.110.6: icmp_seq=25 ttl=62 time=279 ms
+64 bytes from 192.168.110.6: icmp_seq=26 ttl=62 time=105 ms
+64 bytes from 192.168.110.6: icmp_seq=27 ttl=62 time=241 ms
+64 bytes from 192.168.110.6: icmp_seq=28 ttl=62 time=241 ms
+64 bytes from 192.168.110.6: icmp_seq=29 ttl=62 time=192 ms
+64 bytes from 192.168.110.6: icmp_seq=30 ttl=62 time=210 ms
+64 bytes from 192.168.110.6: icmp_seq=31 ttl=62 time=280 ms
+64 bytes from 192.168.110.6: icmp_seq=32 ttl=62 time=195 ms
+64 bytes from 192.168.110.6: icmp_seq=33 ttl=62 time=282 ms
+64 bytes from 192.168.110.6: icmp_seq=34 ttl=62 time=277 ms
+64 bytes from 192.168.110.6: icmp_seq=35 ttl=62 time=329 ms
+64 bytes from 192.168.110.6: icmp_seq=36 ttl=62 time=379 ms
+64 bytes from 192.168.110.6: icmp_seq=37 ttl=62 time=86.0 ms
+64 bytes from 192.168.110.6: icmp_seq=38 ttl=62 time=151 ms
+64 bytes from 192.168.110.6: icmp_seq=39 ttl=62 time=200 ms
+64 bytes from 192.168.110.6: icmp_seq=40 ttl=62 time=190 ms
+64 bytes from 192.168.110.6: icmp_seq=41 ttl=62 time=238 ms
+64 bytes from 192.168.110.6: icmp_seq=42 ttl=62 time=261 ms
+64 bytes from 192.168.110.6: icmp_seq=43 ttl=62 time=208 ms
+64 bytes from 192.168.110.6: icmp_seq=44 ttl=62 time=350 ms
+64 bytes from 192.168.110.6: icmp_seq=45 ttl=62 time=367 ms
+64 bytes from 192.168.110.6: icmp_seq=46 ttl=62 time=279 ms
+64 bytes from 192.168.110.6: icmp_seq=48 ttl=62 time=28.7 ms
+64 bytes from 192.168.110.6: icmp_seq=49 ttl=62 time=142 ms
+64 bytes from 192.168.110.6: icmp_seq=50 ttl=62 time=206 ms
+64 bytes from 192.168.110.6: icmp_seq=51 ttl=62 time=210 ms
+64 bytes from 192.168.110.6: icmp_seq=52 ttl=62 time=229 ms
+64 bytes from 192.168.110.6: icmp_seq=53 ttl=62 time=218 ms
+64 bytes from 192.168.110.6: icmp_seq=54 ttl=62 time=159 ms
+64 bytes from 192.168.110.6: icmp_seq=55 ttl=62 time=253 ms
+64 bytes from 192.168.110.6: icmp_seq=56 ttl=62 time=155 ms
+64 bytes from 192.168.110.6: icmp_seq=57 ttl=62 time=174 ms
+64 bytes from 192.168.110.6: icmp_seq=58 ttl=62 time=274 ms
+64 bytes from 192.168.110.6: icmp_seq=59 ttl=62 time=156 ms
+64 bytes from 192.168.110.6: icmp_seq=61 ttl=62 time=325 ms
+64 bytes from 192.168.110.6: icmp_seq=62 ttl=62 time=239 ms
+64 bytes from 192.168.110.6: icmp_seq=63 ttl=62 time=154 ms
+64 bytes from 192.168.110.6: icmp_seq=64 ttl=62 time=225 ms
+64 bytes from 192.168.110.6: icmp_seq=65 ttl=62 time=148 ms
+64 bytes from 192.168.110.6: icmp_seq=66 ttl=62 time=387 ms
+64 bytes from 192.168.110.6: icmp_seq=68 ttl=62 time=349 ms
+64 bytes from 192.168.110.6: icmp_seq=69 ttl=62 time=20.8 ms
+
+--- 192.168.110.6 ping statistics ---
+69 packets transmitted, 62 received, 10.1449% packet loss, time 68123ms
+rtt min/avg/max/mdev = 20.761/232.246/387.175/82.151 ms

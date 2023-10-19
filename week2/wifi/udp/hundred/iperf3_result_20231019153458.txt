@@ -1,0 +1,43 @@
+Connecting to host 192.168.0.54, port 5209
+[  5] local 192.168.0.149 port 33886 connected to 192.168.0.54 port 5209
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec  11.9 MBytes  99.9 Mbits/sec  8627  
+[  5]   1.00-2.00   sec  11.9 MBytes   100 Mbits/sec  8632  
+[  5]   2.00-3.00   sec  11.9 MBytes   100 Mbits/sec  8634  
+[  5]   3.00-4.00   sec  11.9 MBytes   100 Mbits/sec  8634  
+[  5]   4.00-5.00   sec  11.9 MBytes   100 Mbits/sec  8630  
+[  5]   5.00-6.00   sec  11.9 MBytes   100 Mbits/sec  8633  
+[  5]   6.00-7.00   sec  11.9 MBytes   100 Mbits/sec  8633  
+[  5]   7.00-8.00   sec  11.9 MBytes   100 Mbits/sec  8632  
+[  5]   8.00-9.00   sec  11.9 MBytes   100 Mbits/sec  8632  
+[  5]   9.00-10.00  sec  11.9 MBytes   100 Mbits/sec  8636  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-10.00  sec   119 MBytes   100 Mbits/sec  0.000 ms  0/86323 (0%)  sender
+[  5]   0.00-11.12  sec   113 MBytes  85.5 Mbits/sec  0.238 ms  4267/86321 (4.9%)  receiver
+
+Server output:
+-----------------------------------------------------------
+Server listening on 5209
+-----------------------------------------------------------
+Accepted connection from 192.168.0.149, port 53606
+[  5] local 192.168.0.54 port 5209 connected to 192.168.0.149 port 33886
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  9.76 MBytes  81.8 Mbits/sec  0.123 ms  132/7198 (1.8%)  
+[  5]   1.00-2.00   sec  10.4 MBytes  87.0 Mbits/sec  0.147 ms  69/7576 (0.91%)  
+[  5]   2.00-3.00   sec  7.83 MBytes  65.6 Mbits/sec  0.199 ms  65/5732 (1.1%)  
+[  5]   3.00-4.00   sec  10.7 MBytes  89.8 Mbits/sec  0.284 ms  68/7820 (0.87%)  
+[  5]   4.00-5.00   sec  10.4 MBytes  87.2 Mbits/sec  0.123 ms  142/7671 (1.9%)  
+[  5]   5.00-6.00   sec  10.7 MBytes  89.7 Mbits/sec  0.117 ms  126/7868 (1.6%)  
+[  5]   6.00-7.00   sec  10.4 MBytes  87.4 Mbits/sec  0.102 ms  120/7666 (1.6%)  
+[  5]   7.00-8.00   sec  11.6 MBytes  97.1 Mbits/sec  0.138 ms  315/8696 (3.6%)  
+[  5]   8.00-9.00   sec  11.4 MBytes  95.6 Mbits/sec  0.153 ms  424/8675 (4.9%)  
+[  5]   9.00-10.00  sec  8.54 MBytes  71.6 Mbits/sec  0.224 ms  151/6334 (2.4%)  
+[  5]  10.00-11.00  sec  10.4 MBytes  87.0 Mbits/sec  0.147 ms  2477/9989 (25%)  
+[  5]  11.00-11.12  sec  1.27 MBytes  90.2 Mbits/sec  0.238 ms  178/1096 (16%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-11.12  sec   113 MBytes  85.5 Mbits/sec  0.238 ms  4267/86321 (4.9%)  receiver
+
+
+iperf Done.

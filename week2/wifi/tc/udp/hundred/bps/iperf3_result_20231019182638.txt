@@ -1,0 +1,43 @@
+Connecting to host 192.168.0.54, port 5209
+[  5] local 192.168.0.149 port 40028 connected to 192.168.0.54 port 5209
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec  5.72 MBytes  48.0 Mbits/sec  4140  
+[  5]   1.00-2.00   sec  6.41 MBytes  53.8 Mbits/sec  4642  
+[  5]   2.00-3.00   sec  6.64 MBytes  55.7 Mbits/sec  4807  
+[  5]   3.00-4.00   sec  6.72 MBytes  56.4 Mbits/sec  4867  
+[  5]   4.00-5.00   sec  6.82 MBytes  57.2 Mbits/sec  4940  
+[  5]   5.00-6.00   sec  6.98 MBytes  58.6 Mbits/sec  5055  
+[  5]   6.00-7.00   sec  7.19 MBytes  60.4 Mbits/sec  5210  
+[  5]   7.00-8.00   sec  7.19 MBytes  60.3 Mbits/sec  5208  
+[  5]   8.00-9.00   sec  7.20 MBytes  60.4 Mbits/sec  5213  
+[  5]   9.00-10.00  sec  7.49 MBytes  62.8 Mbits/sec  5421  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-10.00  sec  68.4 MBytes  57.3 Mbits/sec  0.000 ms  0/49503 (0%)  sender
+[  5]   0.00-11.01  sec  50.4 MBytes  38.4 Mbits/sec  0.075 ms  12973/49502 (26%)  receiver
+
+Server output:
+-----------------------------------------------------------
+Server listening on 5209
+-----------------------------------------------------------
+Accepted connection from 192.168.0.149, port 55842
+[ 10] local 192.168.0.54 port 5209 connected to 192.168.0.149 port 40028
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[ 10]   0.00-1.00   sec  4.15 MBytes  34.8 Mbits/sec  0.582 ms  0/3002 (0%)  
+[ 10]   1.00-2.00   sec  5.08 MBytes  42.6 Mbits/sec  0.126 ms  0/3681 (0%)  
+[ 10]   2.00-3.00   sec  5.33 MBytes  44.7 Mbits/sec  0.200 ms  0/3863 (0%)  
+[ 10]   3.00-4.00   sec  5.26 MBytes  44.2 Mbits/sec  0.575 ms  0/3812 (0%)  
+[ 10]   4.00-5.00   sec  5.51 MBytes  46.2 Mbits/sec  0.280 ms  0/3992 (0%)  
+[ 10]   5.00-6.00   sec  5.30 MBytes  44.4 Mbits/sec  0.196 ms  910/4745 (19%)  
+[ 10]   6.00-7.00   sec  2.51 MBytes  21.0 Mbits/sec  0.433 ms  617/2434 (25%)  
+[ 10]   7.00-8.00   sec  2.28 MBytes  19.1 Mbits/sec  0.547 ms  376/2027 (19%)  
+[ 10]   8.00-9.00   sec  3.46 MBytes  29.0 Mbits/sec  0.262 ms  3998/6505 (61%)  
+[ 10]   9.00-10.00  sec  5.42 MBytes  45.4 Mbits/sec  0.465 ms  5736/9659 (59%)  
+[ 10]  10.00-11.00  sec  6.02 MBytes  50.5 Mbits/sec  0.107 ms  1327/5689 (23%)  
+[ 10]  11.00-11.01  sec   119 KBytes   105 Mbits/sec  0.075 ms  9/93 (9.7%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[ 10]   0.00-11.01  sec  50.4 MBytes  38.4 Mbits/sec  0.075 ms  12973/49502 (26%)  receiver
+
+
+iperf Done.

@@ -1,0 +1,42 @@
+Connecting to host 192.168.0.54, port 5206
+[  5] local 192.168.0.149 port 35738 connected to 192.168.0.54 port 5206
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  8.96 MBytes  75.1 Mbits/sec    0    392 KBytes       
+[  5]   1.00-2.00   sec  9.29 MBytes  78.0 Mbits/sec    0    805 KBytes       
+[  5]   2.00-3.00   sec  10.0 MBytes  83.9 Mbits/sec    0   1.22 MBytes       
+[  5]   3.00-4.00   sec  8.75 MBytes  73.4 Mbits/sec    0   1.59 MBytes       
+[  5]   4.00-5.00   sec  8.75 MBytes  73.4 Mbits/sec    0   1.59 MBytes       
+[  5]   5.00-6.00   sec  11.2 MBytes  94.4 Mbits/sec    0   1.59 MBytes       
+[  5]   6.00-7.00   sec  8.75 MBytes  73.4 Mbits/sec    0   1.59 MBytes       
+[  5]   7.00-8.00   sec  10.0 MBytes  83.9 Mbits/sec    0   1.59 MBytes       
+[  5]   8.00-9.00   sec  8.75 MBytes  73.4 Mbits/sec    0   1.59 MBytes       
+[  5]   9.00-10.00  sec  8.75 MBytes  73.4 Mbits/sec    0   1.59 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  93.2 MBytes  78.2 Mbits/sec    0             sender
+[  5]   0.00-10.20  sec  91.4 MBytes  75.2 Mbits/sec                  receiver
+
+Server output:
+-----------------------------------------------------------
+Server listening on 5206
+-----------------------------------------------------------
+Accepted connection from 192.168.0.149, port 35728
+[  5] local 192.168.0.54 port 5206 connected to 192.168.0.149 port 35738
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  6.61 MBytes  55.4 Mbits/sec                  
+[  5]   1.00-2.00   sec  8.58 MBytes  72.0 Mbits/sec                  
+[  5]   2.00-3.00   sec  8.91 MBytes  74.8 Mbits/sec                  
+[  5]   3.00-4.00   sec  9.26 MBytes  77.7 Mbits/sec                  
+[  5]   4.00-5.00   sec  9.67 MBytes  81.1 Mbits/sec                  
+[  5]   5.00-6.00   sec  9.84 MBytes  82.5 Mbits/sec                  
+[  5]   6.00-7.00   sec  9.13 MBytes  76.6 Mbits/sec                  
+[  5]   7.00-8.00   sec  10.2 MBytes  85.7 Mbits/sec                  
+[  5]   8.00-9.00   sec  8.82 MBytes  74.0 Mbits/sec                  
+[  5]   9.00-10.00  sec  8.81 MBytes  73.9 Mbits/sec                  
+[  5]  10.00-10.20  sec  1.57 MBytes  66.5 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-10.20  sec  91.4 MBytes  75.2 Mbits/sec                  receiver
+
+
+iperf Done.

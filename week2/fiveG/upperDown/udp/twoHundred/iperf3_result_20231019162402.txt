@@ -1,0 +1,18 @@
+Connecting to host 192.168.110.6, port 5202
+Reverse mode, remote host 192.168.110.6 is sending
+[  5] local 192.168.1.102 port 58707 connected to 192.168.110.6 port 5202
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  12.5 MBytes   105 Mbits/sec  0.222 ms  5151/14211 (36%)  
+[  5]   1.00-2.00   sec  4.10 MBytes  34.4 Mbits/sec  0.315 ms  13727/16697 (82%)  
+[  5]   2.00-3.00   sec  4.41 MBytes  37.0 Mbits/sec  0.128 ms  14379/17575 (82%)  
+[  5]   3.00-4.00   sec  4.19 MBytes  35.1 Mbits/sec  0.146 ms  13834/16868 (82%)  
+[  5]   4.00-5.00   sec  4.13 MBytes  34.6 Mbits/sec  0.360 ms  14915/17906 (83%)  
+[  5]   5.00-6.00   sec  4.64 MBytes  38.9 Mbits/sec  0.373 ms  13999/17359 (81%)  
+[  5]   6.00-7.00   sec  3.85 MBytes  32.3 Mbits/sec  0.112 ms  9712/12500 (78%)  
+[  5]   7.00-8.00   sec  0.00 Bytes  0.00 bits/sec  0.112 ms  0/0 (0%)  
+[  5]   8.00-9.00   sec  0.00 Bytes  0.00 bits/sec  0.112 ms  0/0 (0%)  
+[  5]   9.00-10.00  sec  0.00 Bytes  0.00 bits/sec  0.112 ms  0/0 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-10.00  sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  sender
+[  5]   0.00-10.00  sec  37.8 MBytes  31.7 Mbits/sec  0.112 ms  85717/113116 (76%)  receiver

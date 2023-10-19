@@ -1,0 +1,8 @@
+Connecting to host 192.168.0.54, port 5204
+[  5] local 192.168.0.149 port 44120 connected to 192.168.0.54 port 5204
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-0.74   sec  7.54 MBytes  85.4 Mbits/sec    0    522 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-0.74   sec  7.54 MBytes  85.4 Mbits/sec    0             sender
+[  5]   0.00-0.74   sec  0.00 Bytes  0.00 bits/sec                  receiver

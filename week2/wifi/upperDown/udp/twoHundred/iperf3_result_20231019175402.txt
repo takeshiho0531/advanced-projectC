@@ -1,0 +1,10 @@
+Connecting to host 192.168.0.54, port 5208
+Reverse mode, remote host 192.168.0.54 is sending
+[  5] local 192.168.0.149 port 52736 connected to 192.168.0.54 port 5208
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  11.1 MBytes  93.5 Mbits/sec  0.328 ms  326/8397 (3.9%)  
+[  5]   1.00-1.02   sec   279 KBytes   112 Mbits/sec  0.121 ms  0/197 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.02   sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  sender
+[  5]   0.00-1.02   sec  11.4 MBytes  93.9 Mbits/sec  0.121 ms  326/8594 (3.8%)  receiver

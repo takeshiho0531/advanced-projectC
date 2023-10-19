@@ -1,0 +1,17 @@
+Connecting to host 192.168.110.6, port 5208
+[  5] local 192.168.1.102 port 44842 connected to 192.168.110.6 port 5208
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  2.13 MBytes  17.9 Mbits/sec    0    140 KBytes       
+[  5]   1.00-2.00   sec   318 KBytes  2.61 Mbits/sec    1   1.41 KBytes       
+[  5]   2.00-3.00   sec  0.00 Bytes  0.00 bits/sec    1   1.41 KBytes       
+[  5]   3.00-4.00   sec  0.00 Bytes  0.00 bits/sec    1   1.41 KBytes       
+[  5]   4.00-5.00   sec  0.00 Bytes  0.00 bits/sec    0   1.41 KBytes       
+[  5]   5.00-6.00   sec  0.00 Bytes  0.00 bits/sec    1   1.41 KBytes       
+[  5]   6.00-7.00   sec  0.00 Bytes  0.00 bits/sec    0   1.41 KBytes       
+[  5]   7.00-8.00   sec  0.00 Bytes  0.00 bits/sec    0   1.41 KBytes       
+[  5]   8.00-9.00   sec  0.00 Bytes  0.00 bits/sec    0   1.41 KBytes       
+[  5]  10.00-691.52 sec  0.00 Bytes  0.00 bits/sec    9   1.41 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-691.52 sec  2.44 MBytes  29.6 Kbits/sec   13             sender
+[  5]   0.00-691.52 sec  0.00 Bytes  0.00 bits/sec                  receiver

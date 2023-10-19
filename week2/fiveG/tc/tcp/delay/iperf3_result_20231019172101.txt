@@ -1,0 +1,8 @@
+Connecting to host 192.168.110.6, port 5205
+[  5] local 192.168.1.102 port 49018 connected to 192.168.110.6 port 5205
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-14262.78 sec  0.00 Bytes  0.00 bits/sec    1   14.1 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-14262.78 sec  0.00 Bytes  0.00 bits/sec    1             sender
+[  5]   0.00-14262.78 sec  0.00 Bytes  0.00 bits/sec                  receiver
