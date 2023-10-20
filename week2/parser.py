@@ -75,6 +75,7 @@ def make_receiver_dict(receiver_lines, file_path):
             transfer = None
             found_ten_second = False
             for i in range(1, len(info_list)):
+                # ex. info_list: ['[', '5]', '0.00-1.00', 'sec', '2.37', 'MBytes', '19.9', 'Mbits/sec', '0', '157', 'KBytes']  # noqa
                 if "10.00-" in info_list[i]:
                     found_ten_second = True
                 if (not found_ten_second) and "Bytes" in info_list[i]:
@@ -83,10 +84,10 @@ def make_receiver_dict(receiver_lines, file_path):
                 if found_ten_second and "Bytes" in info_list[i]:
                     transfer = info_list[i - 1] + info_list[i]
                     info["10.00-(11.00)"] = transfer
-                    if (time.split("10.00-")[1] < "11.00"):
-                      info["total_time"] = time.split("10.00-")[1]
+                    if time.split("10.00-")[1] < "11.00":
+                        info["total_time"] = time.split("10.00-")[1]
                     else:
-                      info["total_time"] = ">= 11.00"
+                        info["total_time"] = ">= 11.00"
 
     return info
 
