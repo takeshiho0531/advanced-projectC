@@ -29,8 +29,9 @@ def make_sender_dict(sender_lines, file_path):
     file_name = os.path.basename(file_path)
     found_interval = False
     found_separator = False
-    info = {}
-    info["file"] = file_name
+    info_transfer = {}
+    info_bitrate = {}
+    info_transfer["file"] = file_name
 
     for line in sender_lines:
         if "Interval" in line:
@@ -48,17 +49,23 @@ def make_sender_dict(sender_lines, file_path):
             for i in range(1, len(info_list)):
                 if "Bytes" in info_list[i]:
                     transfer = info_list[i - 1] + info_list[i]
-                    info[time] = transfer
+                    info_transfer[time] = transfer
+                if "bits/sec" in info_list[i]:
+                    bitrate = info_list[i - 1] + info_list[i]
+                    info_bitrate[time] = bitrate
                     break
-    return info
+                    # これがないとtcpの時cwndに反応してしまう
+    return info_transfer, info_bitrate
 
 
 def make_receiver_dict(receiver_lines, file_path):
     file_name = os.path.basename(file_path)
     found_interval = False
     found_separator = False
-    info = {}
-    info["file"] = file_name
+    info_transfer = {}
+    info_bitrate = {}
+    info_transfer["file"] = file_name
+    info_bitrate["file"] = file_name
 
     for line in receiver_lines:
         if "Interval" in line:
@@ -80,16 +87,26 @@ def make_receiver_dict(receiver_lines, file_path):
                     found_ten_second = True
                 if (not found_ten_second) and "Bytes" in info_list[i]:
                     transfer = info_list[i - 1] + info_list[i]
-                    info[time] = transfer
+                    info_transfer[time] = transfer
+                if (not found_ten_second) and "bits/sec" in info_list[i]:
+                    bitrate = info_list[i - 1] + info_list[i]
+                    info_bitrate[time] = bitrate
                 if found_ten_second and "Bytes" in info_list[i]:
                     transfer = info_list[i - 1] + info_list[i]
-                    info["10.00-(11.00)"] = transfer
+                    info_transfer["10.00-(11.00)"] = transfer
                     if time.split("10.00-")[1] < "11.00":
-                        info["total_time"] = time.split("10.00-")[1]
+                        info_transfer["total_time"] = time.split("10.00-")[1]
                     else:
-                        info["total_time"] = ">= 11.00"
+                        info_transfer["total_time"] = ">= 11.00"
+                if found_ten_second and "bits/sec" in info_list[i]:
+                    bitrate = info_list[i - 1] + info_list[i]
+                    info_bitrate["10.00-(11.00)"] = bitrate
+                    if time.split("10.00-")[1] < "11.00":
+                        info_bitrate["total_time"] = time.split("10.00-")[1]
+                    else:
+                        info_bitrate["total_time"] = ">= 11.00"
 
-    return info
+    return info_transfer, info_bitrate
 
 
 def make_dataframe(directory_path):
@@ -100,8 +117,10 @@ def make_dataframe(directory_path):
         if file_name.endswith(".txt"):
             text_file_paths.append(file_path)
 
-    sender_dicts_list = []
-    receiver_dict_list = []
+    sender_transfer_dict_list = []
+    receiver_transfer_dict_list = []
+    sender_bitrate_dict_list = []
+    receiver_bitrate_dict_list = []
 
     for file_path in text_file_paths:
         try:
@@ -112,41 +131,82 @@ def make_dataframe(directory_path):
             sender_lines = info[0]
             receiver_lines = info[1]
 
-            sender_dict = make_sender_dict(sender_lines, file_path)
-            receiver_dict = make_receiver_dict(receiver_lines, file_path)
+            sender_transfer_dict, sender_bitrate_dict = make_sender_dict(
+                sender_lines, file_path
+            )
+            receiver_transfer_dict, receiver_bitrate_dict = make_receiver_dict(
+                receiver_lines, file_path
+            )
 
-            sender_dicts_list.append(sender_dict)
-            receiver_dict_list.append(receiver_dict)
+            sender_transfer_dict_list.append(sender_transfer_dict)
+            sender_bitrate_dict_list.append(sender_bitrate_dict)
+            receiver_transfer_dict_list.append(receiver_transfer_dict)
+            receiver_bitrate_dict_list.append(receiver_bitrate_dict)
         except:  # noqa
             continue
-    return sender_dicts_list, receiver_dict_list
+    return (
+        sender_transfer_dict_list,
+        sender_bitrate_dict_list,
+        receiver_transfer_dict_list,
+        receiver_bitrate_dict_list,
+    )
 
 
-def save_csv(data_directory_path, saved_parent_directory_path):
+def save_csv(
+    data_directory_path,
+    saved_transfer_parent_directory_path,
+    saved_bitrate_parent_directory_path,
+):
     assert data_directory_path.startswith(("./fiveG/", "./wifi/"))
 
-    if not saved_parent_directory_path.endswith("/"):
-        saved_parent_directory_path += "/"
+    if not saved_transfer_parent_directory_path.endswith("/"):
+        saved_transfer_parent_directory_path += "/"
+    if not saved_bitrate_parent_directory_path.endswith("/"):
+        saved_bitrate_parent_directory_path += "/"
 
     splitted_data_directory = data_directory_path.split("/")
     if len(splitted_data_directory) < 3:
         print("invelid directory path")
         return
 
-    save_base_path = (
-        saved_parent_directory_path
+    save_transfer_base_path = (
+        saved_transfer_parent_directory_path
         + splitted_data_directory[1]
         + "/"
         + ("_".join(splitted_data_directory[2:]))
     )
 
-    sender_dicts_list, receiver_dict_list = make_dataframe(data_directory_path)
+    save_bitrate_base_path = (
+        saved_bitrate_parent_directory_path
+        + splitted_data_directory[1]
+        + "/"
+        + ("_".join(splitted_data_directory[2:]))
+    )
 
-    save_sender_path = save_base_path + "_sender.csv"
-    save_receiver_path = save_base_path + "_receiver.csv"
+    (
+        sender_transfer_dict_list,
+        sender_bitrate_dict_list,
+        receiver_transfer_dict_list,
+        receiver_bitrate_dict_list,
+    ) = make_dataframe(data_directory_path)
 
-    (pd.DataFrame(sender_dicts_list)).to_csv(save_sender_path, index=False)
-    (pd.DataFrame(receiver_dict_list)).to_csv(save_receiver_path, index=False)
+    save_sender_transfer_path = save_transfer_base_path + "_sender.csv"
+    save_receiver_transfer_path = save_transfer_base_path + "_receiver.csv"
+    save_sender_bitrate_path = save_bitrate_base_path + "_sender.csv"
+    save_receiver_bitrate_path = save_bitrate_base_path + "_receiver.csv"
+
+    (pd.DataFrame(sender_transfer_dict_list)).to_csv(
+        save_sender_transfer_path, index=False
+    )
+    (pd.DataFrame(sender_bitrate_dict_list)).to_csv(
+        save_sender_bitrate_path, index=False
+    )
+    (pd.DataFrame(receiver_transfer_dict_list)).to_csv(
+        save_receiver_transfer_path, index=False
+    )
+    (pd.DataFrame(receiver_bitrate_dict_list)).to_csv(
+        save_receiver_bitrate_path, index=False
+    )
 
 
 def get_deepest_subdirectories(root_dir):
@@ -167,10 +227,18 @@ try:
     os.makedirs("./parsed/Transfer/wifi", exist_ok=False)
 except FileExistsError:
     print("Directory ./parsed/Transfer/wifi already exists.")
+try:
+    os.makedirs("./parsed/Bitrate/fiveG", exist_ok=False)
+except FileExistsError:
+    print("Directory ./parsed/Bitrate/fiveG already exists.")
+try:
+    os.makedirs("./parsed/Bitrate/wifi", exist_ok=False)
+except FileExistsError:
+    print("Directory ./parsed/Bitrate/wifi already exists.")
 
 # Local5G
 for subdir in get_deepest_subdirectories("./fiveG/"):
-    save_csv(subdir, "./parsed/Transfer")
+    save_csv(subdir, "./parsed/Transfer", "./parsed/Bitrate")
 # wifi
 for subdir in get_deepest_subdirectories("./wifi/"):
-    save_csv(subdir, "./parsed/Transfer")
+    save_csv(subdir, "./parsed/Transfer", "./parsed/Bitrate")
