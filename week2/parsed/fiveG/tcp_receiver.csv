@@ -20,7 +20,7 @@ iperf3_result_20231019154626.txt,1024KBytes,1.02MBytes,1.24MBytes,1.35MBytes,1.2
 iperf3_result_20231019155510.txt,42.4KBytes,205KBytes,342KBytes,2.63MBytes,3.32MBytes,3.45MBytes,3.84MBytes,4.18MBytes,3.99MBytes,3.91MBytes,1.23MBytes,10.29,
 iperf3_result_20231019154951.txt,245KBytes,77.8KBytes,82.0KBytes,161KBytes,72.1KBytes,28.3KBytes,9.90KBytes,0.00Bytes,49.5KBytes,25.5KBytes,11.3KBytes,10.21,
 iperf3_result_20231019154825.txt,469KBytes,447KBytes,584KBytes,730KBytes,966KBytes,491KBytes,1.02MBytes,566KBytes,337KBytes,208KBytes,106KBytes,10.30,
-iperf3_result_20231019155457.txt,0.00Bytes,421KBytes,1.04MBytes,2.07MBytes,3.40MBytes,3.80MBytes,9.36MBytes,11.6MBytes,6.84MBytes,5.89MBytes,4.81MBytes,over 11.00,1.17MBytes
+iperf3_result_20231019155457.txt,0.00Bytes,421KBytes,1.04MBytes,2.07MBytes,3.40MBytes,3.80MBytes,9.36MBytes,11.6MBytes,6.84MBytes,5.89MBytes,4.81MBytes,>= 11.00,1.17MBytes
 iperf3_result_20231019154615.txt,297KBytes,311KBytes,236KBytes,219KBytes,117KBytes,120KBytes,89.1KBytes,123KBytes,91.9KBytes,97.6KBytes,25.5KBytes,10.30,
 iperf3_result_20231019154836.txt,240KBytes,197KBytes,174KBytes,249KBytes,197KBytes,187KBytes,0.00Bytes,557KBytes,2.83KBytes,4.24KBytes,0.00Bytes,10.20,
 iperf3_result_20231019154604.txt,76.4KBytes,0.00Bytes,0.00Bytes,0.00Bytes,131KBytes,120KBytes,441KBytes,690KBytes,426KBytes,202KBytes,0.00Bytes,10.37,
