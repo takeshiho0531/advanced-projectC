@@ -4,7 +4,8 @@
 ## フォルダ構成
 ```
 .
-├── fiveG: Local5Gの場合
+├── parsed: 生データを加工したもの
+├── fiveG: Local5Gの場合(生データ)
 │   ├── tc
 │   │   ├── tcp
 │   │   │   ├── bps
@@ -24,7 +25,7 @@
 │       └── udp
 │           ├── hundred
 │           └── twoHundred
-└── wifi: WiFiの場合
+└── wifi: WiFiの場合(生データ)
     ├── tc
     │   ├── tcp
     │   │   └── bps
@@ -43,6 +44,8 @@
             ├── hundred
             └── twoHundred
 ```
+- `parsed/`: [parsed/readme.md](./parsed/readme.md)を見てください。生データをparseしてcsvにしたデータです。
+- `parser.py`: `parsed/`内のデータを作るために用いたpythonスクリプト
 - 各フォルダに入ってるshell scriptが書かれたファイルの中のコマンドを見てもらうのが一番確かです。
 - 結果は全てテキストファイルに格納されています。`iperf_result_`以下はtimestamp(実行した時刻)になってます
 - 帯域/遅延制御下で汚染されてしまったファイルが`tc/`以外に含まれてしまっている可能性があります...(最悪timestamp的に判断できる)
