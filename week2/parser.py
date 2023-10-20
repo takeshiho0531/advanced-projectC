@@ -80,12 +80,14 @@ def make_receiver_dict(receiver_lines, file_path):
                 if (not found_ten_second) and "Bytes" in info_list[i]:
                     transfer = info_list[i - 1] + info_list[i]
                     info[time] = transfer
-                transfer = None
                 if found_ten_second and "Bytes" in info_list[i]:
                     transfer = info_list[i - 1] + info_list[i]
-                    info["10.00-"] = transfer
-                    info["total_time"] = time.split("10.00-")[1]
-                    break
+                    info["10.00-(11.00)"] = transfer
+                    if (time.split("10.00-")[1] < "11.00"):
+                      info["total_time"] = time.split("10.00-")[1]
+                    else:
+                      info["total_time"] = ">= 11.00"
+
     return info
 
 
@@ -157,17 +159,17 @@ def get_deepest_subdirectories(root_dir):
 
 
 try:
-    os.makedirs("./parsed/fiveG", exist_ok=False)
+    os.makedirs("./parsed/Transfer/fiveG", exist_ok=False)
 except FileExistsError:
-    print("Directory ./parsed/fiveG already exists.")
+    print("Directory ./parsed/Transfer/fiveG already exists.")
 try:
-    os.makedirs("./parsed/wifi", exist_ok=False)
+    os.makedirs("./parsed/Transfer/wifi", exist_ok=False)
 except FileExistsError:
-    print("Directory ./parsed/wifi already exists.")
+    print("Directory ./parsed/Transfer/wifi already exists.")
 
 # Local5G
 for subdir in get_deepest_subdirectories("./fiveG/"):
-    save_csv(subdir, "./parsed/")
+    save_csv(subdir, "./parsed/Transfer")
 # wifi
 for subdir in get_deepest_subdirectories("./wifi/"):
-    save_csv(subdir, "./parsed/")
+    save_csv(subdir, "./parsed/Transfer")
