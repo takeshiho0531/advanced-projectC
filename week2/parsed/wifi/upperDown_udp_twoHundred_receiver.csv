@@ -1,4 +1,4 @@
-file,0.00-1.00,1.00-2.00,2.00-3.00,3.00-4.00,4.00-5.00,5.00-6.00,6.00-7.00,7.00-8.00,8.00-9.00,9.00-10.00,10.00-,total_time
+file,0.00-1.00,1.00-2.00,2.00-3.00,3.00-4.00,4.00-5.00,5.00-6.00,6.00-7.00,7.00-8.00,8.00-9.00,9.00-10.00,10.00-(11.00),total_time
 iperf3_result_20231019174036.txt,2.65MBytes,3.06MBytes,2.81MBytes,2.73MBytes,2.93MBytes,2.72MBytes,2.76MBytes,3.03MBytes,2.96MBytes,3.10MBytes,368KBytes,10.06
 iperf3_result_20231019174803.txt,5.38MBytes,4.74MBytes,4.91MBytes,4.87MBytes,4.76MBytes,4.72MBytes,4.55MBytes,4.13MBytes,3.66MBytes,4.77MBytes,331KBytes,10.07
 iperf3_result_20231019174433.txt,4.09MBytes,3.05MBytes,2.95MBytes,2.88MBytes,2.72MBytes,2.94MBytes,2.88MBytes,2.92MBytes,2.90MBytes,3.09MBytes,255KBytes,10.08
