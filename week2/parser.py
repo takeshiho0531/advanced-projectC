@@ -32,6 +32,7 @@ def make_sender_dict(sender_lines, file_path):
     info_transfer = {}
     info_bitrate = {}
     info_transfer["file"] = file_name
+    info_bitrate["file"] = file_name
 
     for line in sender_lines:
         if "Interval" in line:
