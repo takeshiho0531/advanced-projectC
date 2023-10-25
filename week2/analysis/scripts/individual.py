@@ -260,8 +260,9 @@ for data_source in data_sources:
                     f"../results/graphs/bitrate_{condition}{data_source}_boxplot.png",
                     f"../results/metrics/bitrate_{condition}{data_source}.txt",
                 )
-"""
-tc_conditions = ["bps", "delay"]
+
+# tc_conditions = ["bps", "delay"]
+tc_conditions = ["bps"]
 for tc_condition in tc_conditions:
     if tc_condition == "delay":
         protocols = ["tcp", "udp_hundred"]
@@ -270,24 +271,27 @@ for tc_condition in tc_conditions:
 
     for data_source in data_sources:
         for data_type in data_types:
-                csv_path_dict={}
-                if data_type == "Transfer":
-                    for protocol in protocols:
-                        for direction in directions:
-                            path = f"../../parsed/Transfer/{data_source}/tc_{protocol}_{tc_condition}_{direction}.csv"
-                            csv_path_dict[f"{protocol}_value_{direction}"]=path
+            csv_path_dict = {}
+            if data_type == "Transfer":
+                for protocol in protocols:
+                    for direction in directions:
+                        path = f"../../parsed/Transfer/{data_source}/tc_{protocol}_{tc_condition}_{direction}.csv"
+                        csv_path_dict[f"{protocol}_value_{direction}"] = path
 
-                    summary_transfer_csv({f"{protocol}_value_{direction}": path},
-                                                f"../results/graphs/tc_transfer_{tc_condition}_{data_source}_displot.png",
-                                                f"../results/graphs/tc_transfer_{tc_condition}_{data_source}_boxplot.png",
-                                                f"../results/metrics/tc_transfer_{tc_condition}_{data_source}.txt")
-                elif data_type == "Bitrate":
-                    for protocol in protocols:
-                        for direction in directions:
-                            path = f"../../parsed/Bitrate/{data_source}/tc_{protocol}_{tc_condition}_{direction}.csv"
-                            csv_path_dict[f"{protocol}_value_{direction}"]=path
-                    summary_bitrate_csv({f"{protocol}_value_{direction}": path},
-                                                f"../results/graphs/tc_bitrate_{tc_condition}{data_source}_displot.png",
-                                                f"../results/graphs/tc_bitrate_{tc_condition}{data_source}_boxplot.png",
-                                                f"../results/metrics/tc_bitrate_{tc_condition}{data_source}.txt")
-"""
+                summary_transfer_csv(
+                    csv_path_dict,
+                    f"../results/graphs/tc_transfer_{tc_condition}_{data_source}_displot.png",
+                    f"../results/graphs/tc_transfer_{tc_condition}_{data_source}_boxplot.png",
+                    f"../results/metrics/tc_transfer_{tc_condition}_{data_source}.txt",
+                )
+            elif data_type == "Bitrate":
+                for protocol in protocols:
+                    for direction in directions:
+                        path = f"../../parsed/Bitrate/{data_source}/tc_{protocol}_{tc_condition}_{direction}.csv"
+                        csv_path_dict[f"{protocol}_value_{direction}"] = path
+                summary_bitrate_csv(
+                    csv_path_dict,
+                    f"../results/graphs/tc_bitrate_{tc_condition}_{data_source}_displot.png",
+                    f"../results/graphs/tc_bitrate_{tc_condition}_{data_source}_boxplot.png",
+                    f"../results/metrics/tc_bitrate_{tc_condition}_{data_source}.txt",
+                )
