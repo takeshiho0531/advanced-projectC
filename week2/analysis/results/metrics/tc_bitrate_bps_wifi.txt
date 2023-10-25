@@ -1,0 +1,54 @@
+tcp_value_sender 
+data number: 960 
+mean: 40.97591666666666 
+variance: 2036.1153085347223 
+std_deviation: 45.12333441285919 
+median: 10.5 
+q1: 0.0 
+q3: 94.4 
+======= 
+tcp_value_receiver 
+data number: 1824 
+mean: 38.15357868544601 
+variance: 1939.7078085926069 
+std_deviation: 44.042114034099306 
+median: 8.36 
+q1: 2.7 
+q3: 95.0 
+======= 
+udp_hundred_value_sender 
+data number: 860 
+mean: 65.53686046511628 
+variance: 190.97644363169277 
+std_deviation: 13.81942269531158 
+median: 61.4 
+q1: 58.1 
+q3: 64.4 
+======= 
+udp_hundred_value_receiver 
+data number: 2322 
+mean: 54.439165818921666 
+variance: 226.70519035195477 
+std_deviation: 15.056732392918285 
+median: 50.7 
+q1: 47.6 
+q3: 53.4 
+======= 
+udp_twoHundred_value_sender 
+data number: 750 
+mean: 60.846533333333326 
+variance: 25.54040798222222 
+std_deviation: 5.05375187184949 
+median: 60.95 
+q1: 57.8 
+q3: 63.8 
+======= 
+udp_twoHundred_value_receiver 
+data number: 2175 
+mean: 49.21415204678363 
+variance: 35.01941375465955 
+std_deviation: 5.917720317373875 
+median: 50.2 
+q1: 47.25 
+q3: 52.4 
+======= 
